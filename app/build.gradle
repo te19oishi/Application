@@ -7,12 +7,12 @@ android {
 
     defaultConfig {
         applicationId "com.example.applicationpbl"
-        minSdk 26
-        targetSdk 32
+        targetSdk 26
         versionCode 1
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        minSdk 14
     }
 
     buildTypes {
