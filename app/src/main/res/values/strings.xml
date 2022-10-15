@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">Application pbl</string>
-    <string name="button_hello">Hello</string>
+    <string name="tv_stamp">Stamp Screen</string>
+    <string name="tv_timer">Timer Screen</string>
+    <string name="tv_booking">Booking Screen</string>
+    <string name="button_stamp">Stamp</string>
+    <string name="button_timer">Timer</string>
+    <string name="button_booking">Booking</string>
 </resources>
