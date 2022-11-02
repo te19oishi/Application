@@ -11,12 +11,14 @@
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:onClick="onClickButton"
-        android:text="予約"
+        android:text="@string/main_text_view"
         android:textSize="50sp"
+        app:backgroundTint="#ff0006"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:strokeColor="#010203"
-        app:backgroundTint="#ff0006"/>
+        app:layout_constraintVertical_bias="0.499"
+        app:strokeColor="#010203" />
 </androidx.constraintlayout.widget.ConstraintLayout>
