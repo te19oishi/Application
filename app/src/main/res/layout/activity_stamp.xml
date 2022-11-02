@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".StampActivity">
 
     <TextView
@@ -15,6 +16,16 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/stamp_inc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_inc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -38,6 +49,7 @@
             android:layout_weight="1"
             android:onClick="onClickTImer"
             android:text="@string/button_timer"
+            android:backgroundTint="@color/midnightblue"
             style="?android:attr/buttonBarButtonStyle" />
 
         <Button
@@ -47,6 +59,7 @@
             android:layout_weight="1"
             android:onClick="onClickBooking"
             android:text="@string/button_booking"
+            android:backgroundTint="@color/midnightblue"
             style="?android:attr/buttonBarButtonStyle" />
 
     </LinearLayout>

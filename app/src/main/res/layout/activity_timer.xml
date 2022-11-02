@@ -29,6 +29,7 @@
             android:layout_weight="1"
             android:onClick="onClickStamp"
             android:text="@string/button_stamp"
+            android:backgroundTint="@color/midnightblue"
             style="?android:attr/buttonBarButtonStyle" />
 
         <Button
@@ -47,6 +48,7 @@
             android:layout_weight="1"
             android:onClick="onClickBooking"
             android:text="@string/button_booking"
+            android:backgroundTint="@color/midnightblue"
             style="?android:attr/buttonBarButtonStyle" />
 
     </LinearLayout>
