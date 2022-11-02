@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
@@ -28,7 +29,7 @@ public class StampActivity extends AppCompatActivity {
 
 
         //Buttonオブジェクトの取得
-        Button btClick = findViewById(R.id.stamp_inc);
+        Button btClick = findViewById(R.id.stamp_scan);
         //リスナクラスのインスタンス生成
         ReadQrcodeListener listener_qr = new ReadQrcodeListener();
         //表示ボタンにリスナを設定
@@ -37,7 +38,7 @@ public class StampActivity extends AppCompatActivity {
     }
 
     /*private class IncrementListener implements View.OnClickListener {
-        int num = 0;
+        int num = 1;
         public void onClick(View view){
             TextView output = findViewById(R.id.stamp);
             output.setText(num + "points");
@@ -65,18 +66,36 @@ public class StampActivity extends AppCompatActivity {
                 .initiateScan();
     }
 
-
+    int num = 1;
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        String str = "コレカラダ";
+        String pass = "20192024";
+        int password = 3;
+        int password2 = 3;
+
         // QRコードを読み込んだ後の処理
         IntentResult result = IntentIntegrator.parseActivityResult(requestCode, resultCode, data);
-        if(result != null && result.getContents() != null) {
-            // QRコードのデータを取得する
-            Log.d("StampActivity", result.getContents());
-        } else {
+        if(result != null) {
+            //成功
+            if(str.equals(result.getContents())) {
+                Toast.makeText(this, "Scanned: " + result.getContents(), Toast.LENGTH_LONG).show();
+                TextView output = findViewById(R.id.stamp);
+                output.setText(num + "points");
+                num++;
+            }
+            //失敗
+            else {
+                Toast.makeText(this, "Cancelled\n" + System.getProperty(str) + ":str=" + str + "\n"
+                        + System.getProperty(result.getContents()) + ":scan=" + result.getContents(), Toast.LENGTH_LONG).show();
+            }
+        }
+
+        else {
             super.onActivityResult(requestCode, resultCode, data);
         }
+
     }
 
 

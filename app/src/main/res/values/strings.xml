@@ -4,7 +4,7 @@
     <string name="tv_timer">Timer Screen</string>
     <string name="tv_booking">Booking Screen</string>
     <string name="button_stamp">Stamp</string>
-    <string name="button_inc">inc</string>
+    <string name="button_scan">Scan</string>
     <string name="button_timer">Timer</string>
     <string name="button_booking">Booking</string>
 </resources>
