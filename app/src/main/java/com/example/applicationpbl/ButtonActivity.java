@@ -20,18 +20,19 @@ public class ButtonActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_button);
 
-       // WebView myWebView = findViewById(R.id.linkText);
-        //myWebView.setWebViewClient(new WebViewClient());
-        //myWebView.loadUrl("https://corekarada.com/");
-        //myWebView.getSettings().setJavaScriptEnabled(true);
+    }
 
-
+    //テキストを押すとコレカラダのリンクに飛ぶ
+    public void onClickURL(View v){
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://corekarada.com/"));
+        startActivity(intent);
     }
 
     //ボタンを押したときの動作
     public void onClickButton(View view){
-        Button button = findViewById(R.id.button1);
-        button.setText("Click");
+        Uri uri = Uri.parse("tel:08083753335");
+        Intent i = new Intent(Intent.ACTION_DIAL, uri);
+        startActivity(i);
     }
     //test
 }

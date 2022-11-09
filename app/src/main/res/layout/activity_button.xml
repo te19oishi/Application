@@ -28,6 +28,8 @@
         android:layout_height="100dp"
         android:text="@string/linkText"
         android:textSize="30sp"
+        android:clickable="true"
+        android:onClick="onClickURL"
         app:layout_constraintBottom_toTopOf="@+id/button1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
