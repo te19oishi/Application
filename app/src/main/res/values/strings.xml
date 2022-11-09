@@ -2,5 +2,5 @@
     <string name="app_name">Application pbl</string>
     <string name="main_text_view">予約</string>
     <string name="action_settings">Setting</string>
-
+    <string name="linkText">コレカラダのホームページは<a href="https://corekarada.com/">こちら</a>から</string>
 </resources>
