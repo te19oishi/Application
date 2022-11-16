@@ -6,6 +6,59 @@
     android:layout_height="match_parent"
     tools:context=".TimerActivity">
 
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/editTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="運動時間"
+        android:inputType="time"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/editTime2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="インターバル"
+        android:inputType="time"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/editNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="回数"
+        android:inputType="number"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/StartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="START" />
+
+    <Button
+        android:id="@+id/StopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="STOP" />
+
+</LinearLayout>
+    
     <TextView
         android:id="@+id/timer"
         android:layout_width="wrap_content"
