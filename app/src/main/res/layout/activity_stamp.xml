@@ -17,15 +17,49 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <Button
-        android:id="@+id/stamp_scan"
+    <!-- スタンプの数を表示する -->
+    <TextView
+        android:id="@+id/stamp_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/button_scan"
+        android:text="@string/tv_point"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@id/stamp_charge"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- スタンプを増やすためのボタン -->
+    <Button
+        android:id="@+id/stamp_charge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_charge"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        app:layout_constraintBottom_toTopOf="@id/stamp_use" />
+
+    <!-- チケットの数を表示する -->
+    <TextView
+        android:id="@+id/ticket_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_ticket"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@id/stamp_use"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- チケットを使うためのボタン -->
+    <Button
+        android:id="@+id/stamp_use"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_use"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/stamp_charge" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -39,6 +73,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/button_stamp"
+            android:textColor="@color/white"
             android:backgroundTint="@color/royalblue"
             style="?android:attr/buttonBarButtonStyle" />
 
@@ -49,6 +84,7 @@
             android:layout_weight="1"
             android:onClick="onClickTImer"
             android:text="@string/button_timer"
+            android:textColor="@color/white"
             android:backgroundTint="@color/midnightblue"
             style="?android:attr/buttonBarButtonStyle" />
 
@@ -59,9 +95,9 @@
             android:layout_weight="1"
             android:onClick="onClickBooking"
             android:text="@string/button_booking"
+            android:textColor="@color/white"
             android:backgroundTint="@color/midnightblue"
             style="?android:attr/buttonBarButtonStyle" />
-
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

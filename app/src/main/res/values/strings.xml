@@ -8,9 +8,11 @@
     <string name="tv_stamp">Stamp Screen</string>
     <string name="tv_timer">Timer Screen</string>
     <string name="tv_booking">Booking Screen</string>
-    <string name="button_stamp">Stamp</string>
-    <string name="button_scan">Scan</string>
-    <string name="button_timer">Timer</string>
-    <string name="button_booking">Booking</string>
-
+    <string name="tv_point">スタンプ：</string>
+    <string name="tv_ticket">チケット：</string>
+    <string name="button_stamp">スタンプ</string>
+    <string name="button_charge">スタンプをためる</string>
+    <string name="button_use">チケットを使う</string>
+    <string name="button_timer">運動時間</string>
+    <string name="button_booking">予約</string>
 </resources>
