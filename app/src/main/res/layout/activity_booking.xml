@@ -29,6 +29,7 @@
             android:layout_weight="1"
             android:onClick="onClickStamp"
             android:text="@string/button_stamp"
+            android:textColor="@color/white"
             android:backgroundTint="@color/midnightblue"
             style="?android:attr/buttonBarButtonStyle" />
 
@@ -39,6 +40,7 @@
             android:layout_weight="1"
             android:onClick="onClickTimer"
             android:text="@string/button_timer"
+            android:textColor="@color/white"
             android:backgroundTint="@color/midnightblue"
             style="?android:attr/buttonBarButtonStyle" />
 
@@ -48,6 +50,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/button_booking"
+            android:textColor="@color/white"
             android:backgroundTint="@color/royalblue"
             style="?android:attr/buttonBarButtonStyle" />
 
