@@ -1,6 +1,16 @@
 <resources>
     <string name="app_name">Application pbl</string>
+
     <string name="main_text_view">予約</string>
     <string name="action_settings">Setting</string>
     <string name="linkText">コレカラダのホームページは<a href="https://corekarada.com/">こちら</a>から</string>
+
+    <string name="tv_stamp">Stamp Screen</string>
+    <string name="tv_timer">Timer Screen</string>
+    <string name="tv_booking">Booking Screen</string>
+    <string name="button_stamp">Stamp</string>
+    <string name="button_scan">Scan</string>
+    <string name="button_timer">Timer</string>
+    <string name="button_booking">Booking</string>
+
 </resources>
